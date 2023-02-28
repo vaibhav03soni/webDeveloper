@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vaibhav calender</title>
+       
+      </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background:blueviolet;
+        }
+     .wrapper{
+        background: #fff;
+        width: 450px;
+        border-radius: 10px;
+     }
+     .wrapper header{
+        display: flex;
+        align-items: center;
+        padding: 25px 30px 10px ;
+        justify-content: space-between;
+     }
+     header .current-date{
+        font-size: 1.45rem;
+        font-weight: 500;
+
+
+     }
+     header .icons span{
+        height: 38px;
+        width: 38px;
+        background: #f2f2f2;
+        margin: 0 1px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 38%;
+        border-radius: 50%;
+        color: #878787;
+        
+
+
+     }
+     header .icons span
+     .calender ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+
+     }
+     .calender{
+        padding: 20PX;
+     }
+     .calender ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        text-align: center;
+     }
+     .calender .weeks  li{
+        font-weight: 500;
+
+     }
+     .calender .days{
+        margin-bottom: 20px;
+     }
+     .calender .days li{
+        margin-top: 30px;
+        cursor: pointer;
+     }
+     .calender ul li{
+        width: calc(100%/7);
+        position: relative;
+     }
+    .calender .days li::before{
+        position: absolute;
+        content: '';
+        height: 400px;
+        width: 40px;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%) ;
+        
+    } 
+    .days li .inactive{
+        color:#aaa;
+    }
+    
+    .days li hover::before {
+        background: #f2f2f2;
+    } 
+    .calender ul li {
+      transform: 2s;
+    }
+    .calender ul li:hover{
+      background-color: crimson;
+    }
+    </style>
+    <body>
+        <div class="wrapper">
+            <header>
+                <p class="current-date">september 2022</p>
+ 
+                        <div class="meterial-symbols-rounded">></div>
+                        <div class="meterial-symbols-rounded"><</div>
+                    </header>
+                    <div class="calender">
+                        <ul class="weeks">
+                            <li>SUN</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>wen</li>
+                            <li>thur</li>
+                            <li>fri</li>
+                            <li>satr</li>
+                        </ul>
+                        <ul class="days">
+                        <li class="inactive">28</li>
+                        <li class="inactive">29</li>
+                        <li class="inactive">30</li>
+                        <li class="inactive">31</li>
+                        <li>1</li>
+                        <li>2</li>
+                        
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        
+                        <li class="active">15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        
+                        <li>27</li>
+                        <li>28</li>
+                        <li>30</li>
+                        <li >1</li>
+                                               
+
+                        
+                        </ul>
+                
+
+
+                    </div>
+        </div>
+
+        <script>
+         
+
+
+
+         
+        </script>
+                       
+        </body>
+        </html>
